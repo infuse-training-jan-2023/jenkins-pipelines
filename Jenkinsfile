@@ -1,16 +1,17 @@
 pipeline {
-    agent any
-
+    agent any 
     stages {
-        stage('build') {
+        stage('Build') { 
             steps {
-                echo env.STAGE_NAME
+                echo  "stage name: $env.STAGE_NAME" 
             }
         }
-        stage('test') {
+        stage('Test') { 
             steps {
-                echo env.STAGE_NAME
+                  echo  "stage name: $env.STAGE_NAME" 
+
             }
         }
+       
     }
 }
