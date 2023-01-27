@@ -7,7 +7,7 @@ pipeline {
                 echo env.STAGE_NAME
             }
         }
-        stage('test') {
+        stage('test'){
             steps {
                 echo env.STAGE_NAME
             }
