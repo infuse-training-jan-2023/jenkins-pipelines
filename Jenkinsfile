@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo env.STAGE_NAME
+                echo '${env.STAGE_NAME}'
             }
         }
         stage('test') {
             steps {
-                echo env.STAGE_NAME
+                echo '${env.STAGE_NAME}'
             }
         }
     }
