@@ -4,13 +4,18 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo env.STAGE_NAME
+                script {
+                    echo "I'm in stage:$env.STAGE_NAME"
+                }
             }
         }
         stage('test') {
             steps {
-                echo env.STAGE_NAME
+                  script {
+                    echo "I'm in stage:$env.STAGE_NAME"
+                }
             }
         }
+        
     }
 }
