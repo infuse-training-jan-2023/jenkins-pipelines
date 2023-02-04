@@ -1,6 +1,8 @@
 pipeline {
-    agent any
-
+    agent {label "jenkins-slave-harish"}
+    triggers {
+        cron('H H * * 1-5')
+    }
     stages {
         stage('build') {
             steps {
